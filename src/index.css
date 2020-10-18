@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.mouseIn {
+  display: block;
+}
+
+.mouseOut {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mouseOut {
+    display: block;
+  }
+  .mouseIn {
+    display: block;
+  }
+  .logo_big {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .logo_small {
+    display: none;
+  }
+}
