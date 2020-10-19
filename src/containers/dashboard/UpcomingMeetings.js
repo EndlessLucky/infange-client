@@ -137,8 +137,8 @@ class UpcomingMeeting extends React.Component {
                         <div
                           style={{
                             margin: "15px",
-                            border: !isMember ? "1.5px solid red" : "",
-                            "border-radius": !isMember ? "5px" : "",
+                            // "border": !isMember ? "1.5px solid red" : "",
+                            // "border-radius": !isMember ? "5px" : "",
                           }}
                           onClick={
                             isMember

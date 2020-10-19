@@ -148,8 +148,10 @@ class MeetingView extends PureComponent {
       const s = this.props.meetings.find(
         (mtng) => mtng._id == this.props.location.state.selectedMeeting
       );
-      if (this.state.selectedMeeting != s)
+      console.log(s);
+      if (this.state.selectedMeeting != s){
         this.setState({ selectedMeeting: s });
+      }        
     }
   }
 
@@ -298,7 +300,7 @@ class MeetingView extends PureComponent {
               editMeeting={this.props.edit}
               organizations={this.props.organizations}
               onFilterChange={(params) => {
-                console.log("filtereddd", { ...params });
+                // console.log("filtereddd", { ...params });
                 this.applyFilter({ ...params });
               }}
               userID={this.props.account[0] && this.props.account[0]._id}

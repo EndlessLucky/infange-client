@@ -223,6 +223,7 @@ class Edit extends PureComponent {
       this.setState({ pending: false });
     }
   };
+  
   handleClickNote = async (event) => {
     // this.setState({selectedNote: event.target.id})
     this.props.list.map((list) => {
