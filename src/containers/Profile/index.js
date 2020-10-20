@@ -201,7 +201,7 @@ class Profile extends Component {
   };
 
   handleProfileChange = (profile) => {
-    console.log("proz", profile);
+    // console.log("proz", profile);
     this.setState({
       profile,
     });
@@ -232,7 +232,7 @@ class Profile extends Component {
   };
 
   toggleCropModal = () => {
-    console.log("crop", this.state.openCrop);
+    // console.log("crop", this.state.openCrop);
     if (!this.state.openCrop) this.handleProfileChange();
     this.setState((state) => {
       return {
@@ -248,14 +248,14 @@ class Profile extends Component {
   };
 
   handleMailId = (event) => {
-    console.log("...", event.target.value);
+    // console.log("...", event.target.value);
     this.setState({
       contactEmail: event.target.value,
     });
   };
 
   handleContactNo = (event) => {
-    console.log("...", event.target.value);
+    // console.log("...", event.target.value);
     this.setState({
       contactNo: event.target.value,
     });
@@ -373,7 +373,8 @@ class Profile extends Component {
         }
       });
     }
-    if (pro) console.log("...Z", this.state.pro[0]);
+    if (pro) 
+      // console.log("...Z", this.state.pro[0]);
 
     return (
       <div style={{ marginLeft: "65px" }}>

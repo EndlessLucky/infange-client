@@ -46,7 +46,7 @@ export const createTopic = (meetingID, topic, ordering = false) => {
       try {
         let t = await api.create(meetingID, topic);
         t = t.data;
-        console.log("API sucess");
+        // console.log("API sucess");
         dispatch(receiveTopic(t));
         return t;
       } catch (err) {

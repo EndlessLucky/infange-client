@@ -1150,13 +1150,7 @@ const mapStateToProps = (state) => {
     users.profiles.push(users.byID[keys[i]]);
     i++;
   }
-  console.log(
-    "checkkkk",
-    users.profiles,
-    keys,
-    state.users.byID,
-    Object.keys(state.users.byID)
-  );
+  // console.log( "checkkkk", users.profiles, keys, state.users.byID, Object.keys(state.users.byID) );
   return { users: users, meetings: state.meetings.list };
 };
 

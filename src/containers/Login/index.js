@@ -47,7 +47,7 @@ class LoginUser extends Component {
     this.setState({ isLoading: true });
     login({ username, password })
       .then(data => {
-        console.log(data);
+        // console.log(data);
         localStorage.setItem("user", username);
         this.props.history.push("/");
       })

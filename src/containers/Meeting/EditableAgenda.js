@@ -326,7 +326,7 @@ const EditableAgenda = (
                     setEditorData(editor.getData());
                   }}
                   onFocus={(editor) => {
-                    console.log("Focus.", editor);
+                    // console.log("Focus.", editor);
                   }}
                 />
                 <div

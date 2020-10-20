@@ -119,7 +119,7 @@ class ToDo extends React.Component {
       const response = await axios.get(
         `/api/objectives?todo=true&pageNo=${pageNumber}`
       );
-      console.log("res", response.data);
+      // console.log("res", response.data);
       // upcomingMeetingsData = response.data
       this.setState({
         toDoData: response.data,
@@ -151,7 +151,7 @@ class ToDo extends React.Component {
   };
 
   render() {
-    console.log("toDoData", this.state.toDoData);
+    // console.log("toDoData", this.state.toDoData);
     return (
       <div>
         <h1 style={{ textAlign: "left" }}>To Do</h1>

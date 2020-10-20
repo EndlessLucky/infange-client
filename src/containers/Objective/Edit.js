@@ -298,12 +298,7 @@ const EditObjective = ({
 
   const handleLinkClick = (e) => {
     e.preventDefault();
-    console.log(
-      "handleclicccc",
-      meetingID,
-      objective.meetingID,
-      objective.meetings[0]
-    );
+    // console.log("handleclicccc", meetingID, objective.meetingID, objective.meetings[0]);
     history.push({
       pathname: `/Meetings`,
       search: "",

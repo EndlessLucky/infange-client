@@ -110,7 +110,7 @@ class UpcomingMeeting extends React.Component {
                   mtng.invitees &&
                   !!mtng.invitees.find((invitee) => invitee.userID === ownerID);
                 isMember = isOwner || isInvitee;
-                if (mtng.status == 'InProgress') {
+                if ( currentDate !== moment.utc(mtng.startDate).local().format("D MMM") ) {
                   return (
                     <div style={{ paddingBottom: 62 }}>
                       <h2
@@ -230,7 +230,7 @@ class UpcomingMeeting extends React.Component {
                       </div>
                     </div>
                   );
-                } else if(mtng.status == 'Pending') {
+                } else {
                   return (
                     <div
                       style={{ margin: "15px", paddingTop: 65 }}

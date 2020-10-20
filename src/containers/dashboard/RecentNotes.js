@@ -27,12 +27,7 @@ class RecentNotes extends React.Component {
   };
 
   componentDidUpdate = (prevProps) => {
-    console.log(
-      "pppp",
-      prevProps.notes,
-      this.props.notes,
-      prevProps.notes != this.props.notes
-    );
+    // console.log( "pppp", prevProps.notes, this.props.notes, prevProps.notes != this.props.notes );
     if (prevProps.notes != this.props.notes) this.getRecentNotes(0);
   };
 
@@ -52,7 +47,7 @@ class RecentNotes extends React.Component {
   };
 
   render() {
-    console.log("recentNotes", this.state.recentNotesData);
+    // console.log("recentNotes", this.state.recentNotesData);
     return (
       <div>
         <h1 style={{ textAlign: "left" }}>Recent Notes</h1>

@@ -4,7 +4,7 @@ import storage from "../../helpers/storage";
 const selectOrganization = (store) => (next) => async (action) => {
   next(action);
   const { payload } = action;
-  console.log(action);
+  // console.log(action);
 
   switch (action.type) {
     case "SELECT_ORGANIZATION": {

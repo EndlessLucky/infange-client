@@ -31,7 +31,7 @@ self.addEventListener("notificationclick", function(event) {
   event.notification.close();
 
   if (clients.openWindow) {
-    console.log(event.notification.data.id);
+    // console.log(event.notification.data.id);
     if (event.notification.title === "Objective") {
       event.waitUntil(
         clients.openWindow(`/Objectives/Edit/${event.notification.data.id}`)

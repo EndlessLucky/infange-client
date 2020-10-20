@@ -34,7 +34,7 @@ const App = () => {
     //  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
     if (window.Notification) {
       Notification.requestPermission(function(result) {
-        console.log(result);
+        // console.log(result);
       });
     }
     registerNotifications(history);

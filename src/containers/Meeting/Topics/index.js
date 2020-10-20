@@ -311,7 +311,7 @@ const ViewAgenda = ({
             <CKEditor
               editor={CustomEditor}
               onInit={(editor) => {
-                console.log("Editor is ready to use!", editor);
+                // console.log("Editor is ready to use!", editor);
                 editor.editing.view.focus();
               }}
               onChange={async (event, editor) => {
@@ -324,7 +324,7 @@ const ViewAgenda = ({
                 },
               }}
               onFocus={(editor) => {
-                console.log("Focus.", editor);
+                // console.log("Focus.", editor);
                 setSelectedType("Topic");
               }}
             />

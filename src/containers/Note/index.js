@@ -226,13 +226,7 @@ const Notes = ({ notes, organizations, account, remove }) => {
   const [filters, setFilters] = useState({ tagState: [] });
   const [filtered, setFiltered] = useState(notes);
   const [notesState, setNotesState] = useState(notes);
-  console.log(
-    "orgsssss",
-    orgs,
-    filtered,
-    filters.tagState,
-    filtered.length > 0 && filters.tagState && filters.tagState.length > 0
-  );
+  // console.log( "orgsssss", orgs, filtered, filters.tagState, filtered.length > 0 && filters.tagState && filters.tagState.length > 0 );
   useEffect(() => {
     let latestNotes =
       filtered.length > 0 && filters.tagState && filters.tagState.length > 0

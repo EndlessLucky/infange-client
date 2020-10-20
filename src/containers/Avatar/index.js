@@ -69,8 +69,8 @@ export const UserAvatar = ({organizationID, userID, teamAvatar, meetingInvitees,
     let flag = false;
     const toggleModal = (para) => {
         setOpen(para)
-     }
-     const isAvatarExists = (invitees) => {
+    }
+    const isAvatarExists = (invitees) => {
         let a = [], count = 0;
         invitees.map(i=>a.push(true))
         invitees.map(async (m,i)=>{
@@ -90,7 +90,7 @@ export const UserAvatar = ({organizationID, userID, teamAvatar, meetingInvitees,
                     setErroredArray(a)
             }
         })
-     }
+    }
 
      useEffect(()=>{
          if((teamAvatar&&!open) || upcomingMeetingAvatar) {
@@ -113,9 +113,9 @@ export const UserAvatar = ({organizationID, userID, teamAvatar, meetingInvitees,
         }
         // setPending(false);
       };
-      if(meetingInvitees)
-        console.log("meeting invitees", meetingInvitees.length)
-    const getRandomColor = ()=> {
+    //   if(meetingInvitees)
+        // console.log("meeting invitees", meetingInvitees.length)
+      const getRandomColor = ()=> {
         var letters = '0123456789ABCDEF';
         var color = '#';
         for (var i = 0; i < 6; i++) {
