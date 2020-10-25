@@ -56,6 +56,10 @@ export const registerNotifications = (history) => {
     NotificationManager.info(payload.message, null, 3000);
   });
 
+  socketClient.on("notification_deleted", (payload) => {
+    NotificationManager.error(payload.message, null, 3000);
+  });
+
   socketClient.on("meeting_created", (payload) => {
     insertNotification(payload);
     NotificationManager.info(payload.message, null, 3000, () => {
