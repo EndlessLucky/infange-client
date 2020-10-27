@@ -1,0 +1,14 @@
+
+.flex {
+    display:flex;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex > * {
+    width: 100%;
+}
