@@ -20,7 +20,7 @@
     "autosuggest-highlight": "^3.1.1",
     "avatar-image": "E:/module/avatar-image",
     "axios": "^0.18.0",
-    "ckeditor": "E:/module/avatar-image",
+    "ckeditor": "E:/module/ckeditor",
     "clsx": "^1.1.0",
     "history": "^4.7.2",
     "lodash": "^4.17.19",
